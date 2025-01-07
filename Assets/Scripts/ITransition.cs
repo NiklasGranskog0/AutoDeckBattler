@@ -1,8 +1,7 @@
-namespace Assets.Scripts.Framework.StateMachine
+using Assets.Scripts.Framework.StateMachine;
+
+public interface ITransition
 {
-    public interface ITransition
-    {
-        public IState To { get; }
-        public IPredicate Condition { get; }
-    }
+    public IState To { get; }
+    public IPredicate Condition { get; }
 }

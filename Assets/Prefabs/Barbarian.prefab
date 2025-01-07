@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3897456029122289161}
+  - component: {fileID: 6854926024173497486}
+  - component: {fileID: 4934735305792670746}
   m_Layer: 0
   m_Name: Barbarian
   m_TagString: Untagged
@@ -32,6 +34,42 @@ Transform:
   - {fileID: 932918954330589913}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &6854926024173497486
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699140084315095583}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4934735305792670746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699140084315095583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fab49e2c04efe64b909afc33e26a841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 6854926024173497486}
+  animator: {fileID: 6606935380273508368}
 --- !u!1 &8342244146114362567
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,6 +79,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 932918954330589913}
+  - component: {fileID: 6606935380273508368}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -64,6 +103,28 @@ Transform:
   - {fileID: 9219437048503713091}
   m_Father: {fileID: 3897456029122289161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6606935380273508368
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342244146114362567}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 43ca001bbb19a9644a2570b6509d98c8, type: 3}
+  m_Controller: {fileID: 9100000, guid: 5468786681f5714449fc33712caa19e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &8680895382388923048
 PrefabInstance:
   m_ObjectHideFlags: 0
